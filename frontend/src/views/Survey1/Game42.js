@@ -184,18 +184,6 @@ function Game32() {
                 Home Page
             </Button>
 
-            <div style={{
-                background: '#1e3246',
-                position: 'absolute',
-                bottom: '6px',
-                left: '6px',
-                padding: '10px',
-                borderRadius: '4px',
-                color: 'white',
-                display: submitDisabled ? 'block' : 'none'
-            }}>
-                Please wait for Instructor
-            </div>
 
         </form>
     );
