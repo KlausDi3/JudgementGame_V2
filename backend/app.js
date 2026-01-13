@@ -22,11 +22,11 @@ app.use(express.static('public')); // 从 'public' 目录提供静态文件
 
 const pool = new Pool({
 
-    host: 'dpg-crpgut3tq21c739acapg-a.virginia-postgres.render.com',
+    host: 'dpg-d5jdb22li9vc73cr88ig-a.virginia-postgres.render.com',
     port: 5432,
-    user: 'survey_summary_user',
-    password: 'e5ibAi4EBZPmIZkf2NSdOa7lHq0SPDAT',
-    database: 'survey_summary',
+    user: 'aaa',
+    password: '7pEmtVCvWr1A1RkLMxZwaYLC0yHxqK6r',
+    database: 'judgementgame_v2',
     ssl: {
         rejectUnauthorized: true // This should be true to ensure secure connections
     }
