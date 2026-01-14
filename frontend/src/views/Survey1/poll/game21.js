@@ -31,7 +31,7 @@
 //         };
 //
 //         try {
-//             const response = await fetch('https://judgementgame-instructor.onrender.com/submit', {
+//             const response = await fetch('https://judgementgame-v2-backend.onrender.com/submit', {
 //                 method: 'POST',
 //                 headers: { 'Content-Type': 'application/json' },
 //                 body: JSON.stringify(data)
@@ -188,12 +188,12 @@ function CombinedGame() {
 
         try {
             const responses = await Promise.all([
-                fetch('https://judgementgame-instructor.onrender.com/submit', {
+                fetch('https://judgementgame-v2-backend.onrender.com/submit', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data1)
                 }),
-                fetch('https://judgementgame-instructor.onrender.com/submit', {
+                fetch('https://judgementgame-v2-backend.onrender.com/submit', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data2)

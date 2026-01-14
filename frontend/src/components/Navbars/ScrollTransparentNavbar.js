@@ -301,7 +301,7 @@ function ScrollTransparentNavbar() {
                     color="primary"
                     onClick={() => {
                       if (window.confirm("Are you sure you want to delete all data? This action cannot be undone.")) {
-                        fetch('https://judgementgame-instructor.onrender.com/deleteAll', {
+                        fetch('https://judgementgame-v2-backend.onrender.com/deleteAll', {
                           method: 'POST',
                           headers: {
                             'Content-Type': 'application/json'

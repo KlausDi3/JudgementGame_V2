@@ -34,7 +34,7 @@ function Game12() {
         };
 
         try {
-            const response = await fetch('https://judgementgame-instructor.onrender.com/submit', {
+            const response = await fetch('https://judgementgame-v2-backend.onrender.com/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
