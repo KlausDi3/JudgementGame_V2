@@ -52,7 +52,7 @@
 //     };
 //
 //     const getResult = async () => {
-//         fetch("https://judgementgame-instructor.onrender.com/find", { method: 'POST' })
+//         fetch("https://judgementgame-v2-backend.onrender.com/find", { method: 'POST' })
 //             .then((response) => response.json())
 //             .then(({ data, code }) => {
 //                 console.log('data' + code, data)
@@ -218,7 +218,7 @@ function CombinedGame() {
 
     const getResult = async () => {
         try {
-            const response = await fetch("https://judgementgame-instructor.onrender.com/find", { method: 'POST' });
+            const response = await fetch("https://judgementgame-v2-backend.onrender.com/find", { method: 'POST' });
             const { data, code } = await response.json();
             if (code === 200) {
                 setResultData1(data.filter(item => item.survey_num === 8 && item.version === 1));

@@ -55,7 +55,7 @@ function Game12() {
     };
 
     const getResult = async () => {
-        fetch("https://judgementgame-instructor.onrender.com/find", { method: 'POST' })
+        fetch("https://judgementgame-v2-backend.onrender.com/find", { method: 'POST' })
             .then((response) => response.json())
             .then(({ data, code }) => {
                 console.log('data' + code, data)
