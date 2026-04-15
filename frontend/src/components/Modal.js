@@ -31,8 +31,8 @@ const Modal = ({ isOpen, onClose, title, children }) => {
     if (!isOpen) return null;
 
     return (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ background: 'white', padding: 20, borderRadius: 5, width: '80%', maxWidth: 500 }}>
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999 }}>
+            <div style={{ background: 'white', padding: 20, borderRadius: 5, width: '80%', maxWidth: 500, zIndex: 10000 }}>
                 <h4>{title}</h4>
                 {children}
                 <button onClick={onClose} style={{ float: 'right', marginTop: 10 }}>Close</button>
